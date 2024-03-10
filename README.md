@@ -1,6 +1,6 @@
 # Shlink On Railway
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/H19Oeo?referralCode=IFlm92)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/kwu__Y?referralCode=IFlm92)
 
 ## What is this template?
 
