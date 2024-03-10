@@ -62,4 +62,4 @@ If you have feedback on this template, [please submit a GitHub issue](https://gi
 
 ### Known issues
 
-- Shlink cannot connect to the database via private networking: this is due to the fact that shlink appears to not support IPV6 networking (which Railway uses for it's private networking features). If you can see a way around this, feel free to leave an explanation in the open issue or file a pull request.
+- [Shlink cannot connect to the database via private networking](https://github.com/MykalMachon/shlink-on-railway/issues/1): this is due to the fact that shlink appears to not support IPV6 networking (which Railway uses for it's private networking features). If you can see a way around this, feel free to leave an explanation in the open issue or file a pull request.
