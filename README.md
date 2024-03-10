@@ -24,14 +24,28 @@ This template provides access to both [the Shlink API](https://shlink.io/documen
 
 ### Optional: configuring your own domains
 
-See this guide on Railway for configuring your own domain. 
+You'll probably want your shlink service to have a custom domain so the generated shortlinks are *shorter* than the links you're redirecting to. 
+
+See [this guide on Railway for configuring a custom domain](https://docs.railway.app/guides/public-networking#custom-domains).
+
+### Optional: configuring app sleeping
+
+If you want your services to scale down when not in use, you can setup [app sleeping on Railway](https://docs.railway.app/reference/app-sleeping).
+
+See [this guide on Railway for configuring app sleeping](https://docs.railway.app/guides/optimize-usage#enabling-app-sleeping).
 
 ## Project structure & services
 
 This template is made up of three railway services: 
 
-- Shlink: short link application 
-- Shlink Web Client: web-based management console for Shlink
+- [Shlink](https://shlink.io/documentation/): primary short link application
+   - The primary short link application.
+   - [Serves a REST API](https://shlink.io/documentation/api-docs/) that allows users to manage short links.
+   - All your generated short links will be at this service's URL.
+- [Shlink Web Client](https://shlink.io/documentation/shlink-web-client/): web app for managing Shlink
+   - Web UI for handling your short URLs, creating new ones or monitoring visit stats.
+   - Hooks into the Shlink service's API.
+   - Protected by HTTP basic-authentication. 
 - PostgreSQL Database: primary database used by Shlink
 
 ## Additional resources
