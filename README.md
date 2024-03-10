@@ -4,7 +4,7 @@
 
 ## What is this template?
 
-Shlink is a self-hosted URL shortener that enables you to create, and track the usage of  "short" URLs that redirect to other, longer, URLs.  Shlink also provides analytics on URL usage, such as visit counts and geographic location of the visitors. Shlink is designed for those looking for a private, customizable alternative to public URL shortening services.
+Shlink is a self-hosted URL shortener that enables you to create, and track the usage of  "short" URLs that redirect to other, longer, URLs. Shlink also provides analytics on URL usage, such as visit counts and geographic location of the visitors.
 
 This template spins up:
 - [Shlink](https://shlink.io/documentation/api-docs/) the official shlink application. This handles short links and serves an authenticated API for management.
