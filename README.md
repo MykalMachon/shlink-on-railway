@@ -6,7 +6,9 @@
 
 Shlink is a self-hosted URL shortener that enables you to create, and track the usage of  "short" URLs that redirect to other, longer, URLs.  Shlink also provides analytics on URL usage, such as visit counts and geographic location of the visitors. Shlink is designed for those looking for a private, customizable alternative to public URL shortening services.
 
-This template provides access to both [the Shlink API](https://shlink.io/documentation/api-docs/) for programmatic access and [the Shlink web client](https://shlink.io/documentation/shlink-web-client/) (behind HTTP basic-authentication) for web-based configuration and management.
+This template spins up:
+- [Shlink](https://shlink.io/documentation/api-docs/) the official shlink application. This handles short links and serves an authenticated API for management.
+- [Shlink Web Client](https://shlink.io/documentation/shlink-web-client/) the official Shlink web client used for managing and monitoring your short links + HTTP basic-authentication via NGINX. 
 
 *This template makes deploying Shlink extremely easy; **It can be setup in less than 5 minutes**.*
 
@@ -44,8 +46,8 @@ This template is made up of three railway services:
    - All your generated short links will be at this service's URL.
 - [Shlink Web Client](https://shlink.io/documentation/shlink-web-client/): web app for managing Shlink
    - Web UI for handling your short URLs, creating new ones or monitoring visit stats.
-   - Hooks into the Shlink service's API.
-   - Protected by HTTP basic-authentication. 
+   - The Web UI hooks into the Shlink service's API on template generation and requires no extra setup.
+   - This template bolts on HTTP basic-authentication to the web client making it safe to expose to the internet. 
 - PostgreSQL Database: primary database used by Shlink
 
 ## Additional resources
